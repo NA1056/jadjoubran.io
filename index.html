@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jad Joubran</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:700" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -254,19 +253,19 @@
             <div class="wrapper">
               <div class="icons">
                 <a href="https://github.com/jadjoubran" target="_blank">
-                  <img src="assets/github.svg" width="22" height="22">
+                  <img src="assets/github.svg" width="22" height="22" alt="github">
               </a>
               <a href="https://twitter.com/joubranjad" target="_blank">
-                  <img src="assets/twitter.svg" width="22" height="22">
+                  <img src="assets/twitter.svg" width="22" height="22" alt="twitter">
               </a>
               <a href="https://www.youtube.com/jadjoubran" target="_blank">
-                  <img src="assets/youtube.svg" width="22" height="22">
+                  <img src="assets/youtube.svg" width="22" height="22" alt="youtube">
               </a>
               <a href="https://medium.com/@JoubranJad/" target="_blank">
-                  <img src="assets/medium.svg" width="22" height="22">
+                  <img src="assets/medium.svg" width="22" height="22" alt="medium">
               </a>
               <a href="mailto:joubran.jad@gmail.com">
-                  <img src="assets/mail.svg" width="20" height="22">
+                  <img src="assets/mail.svg" width="20" height="22" alt="mail">
               </a>
           </div>
           <div class="text">Designed by <a href="https://nicolesaidy.com" target="_blank">Nicole Saidy</a> &amp; developed by Jad Joubran</div>
@@ -278,6 +277,14 @@
 </footer>
 
 <script>
+
+    (function(){
+        var fonts = document.createElement('link');
+        fonts.rel = 'stylesheet';
+        fonts.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:700';
+        document.head.appendChild(fonts);
+    })();
+
     function loadScript(src, callback){
         var script = document.createElement('script');
         script.defer = true;
