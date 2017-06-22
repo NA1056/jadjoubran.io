@@ -52,7 +52,7 @@
     <div id="hero">
         <div id="video-overlay"></div>
         <div id="video-wrapper">
-          <video width="100%" height="100%" autoplay muted loop>
+          <video width="100%" height="100%" autoplay muted loop playsinline>
               <source src="assets/hero-video.webm" type="video/webm"/>
               <source src="assets/hero-video.mp4" type="video/mp4"/>
           </video>
@@ -278,15 +278,17 @@
 </footer>
 
 <script>
-    function loadScript(src){
+    function loadScript(src, callback){
         var script = document.createElement('script');
         script.defer = true;
         script.src = src;
+        script.onload = callback;
         document.body.appendChild(script);
     }
     window.addEventListener('load', function(){
-        loadScript('js/app.min.js');
-        loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyByvSX0cU205I-gpYiNPQxBhMDxOl0FQxI&callback=initMap');
+        loadScript('js/app.min.js', function(){
+            loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyByvSX0cU205I-gpYiNPQxBhMDxOl0FQxI&callback=initMap');
+        });
     });
 </script>
 </body>
