@@ -1,25 +1,6 @@
 function getIcon() {
   return {
-    url: `data:image/svg+xml;utf-8, 
-    <svg width="22px" height="29px" viewBox="2 0 22 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M8,0 C3.57714286,0 0,3.57714286 0,8 C0,14 8,22.8571429 8,22.8571429 C8,22.8571429 16,14 16,8 C16,3.57714286 12.4228571,0 8,0 Z M8,10.8571429 C6.42285714,10.8571429 5.14285714,9.57714286 5.14285714,8 C5.14285714,6.42285714 6.42285714,5.14285714 8,5.14285714 C9.57714286,5.14285714 10.8571429,6.42285714 10.8571429,8 C10.8571429,9.57714286 9.57714286,10.8571429 8,10.8571429 Z" id="path-1"></path>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.149019608   0 0 0 0 0.176470588  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="ic_location_on_white_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(5.000000, 2.000000)">
-        <ellipse id="Oval" fill="#222C33" cx="8" cy="8" rx="3.42857143" ry="3.42857143"></ellipse>
-        <g id="Shape" fill-rule="nonzero">
-            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-        </g>
-    </g>
-</svg>`
+    url: `data:image/svg+xml;utf-8, <svg width="22px" height="29px" viewBox="2px 0px 22px 29px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M8,0 C3.57714286,0 0,3.57714286 0,8 C0,14 8,22.8571429 8,22.8571429 C8,22.8571429 16,14 16,8 C16,3.57714286 12.4228571,0 8,0 Z M8,10.8571429 C6.42285714,10.8571429 5.14285714,9.57714286 5.14285714,8 C5.14285714,6.42285714 6.42285714,5.14285714 8,5.14285714 C9.57714286,5.14285714 10.8571429,6.42285714 10.8571429,8 C10.8571429,9.57714286 9.57714286,10.8571429 8,10.8571429 Z" id="path-1"></path> <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2"> <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset> <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur> <feColorMatrix values="0 0 0 0 0.117647059 0 0 0 0 0.149019608 0 0 0 0 0.176470588 0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix> </filter> </defs> <g id="ic_location_on_white_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(5.000000, 2.000000)"> <ellipse id="Oval" fill="%23222C33" cx="8" cy="8" rx="3.42857143" ry="3.42857143"></ellipse> <g id="Shape" fill-rule="nonzero"> <use fill="black" fill-opacity="1" filter="url(%23filter-2)" xlink:href="%23path-1"></use> <use fill="%23ffffff" fill-rule="evenodd" xlink:href="%23path-1"></use> </g> </g> </svg>`
   };
 }
 
@@ -65,7 +46,6 @@ function createMarker(map, info) {
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
-    minZoom: 2,
     center: {
       lat: 40,
       lng: 20
