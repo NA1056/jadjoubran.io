@@ -14,7 +14,7 @@ h2 {
 }
 h3 {
   font-size: 21px;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.5px;
 }
 p {
   font-size: 17px;
@@ -101,7 +101,7 @@ a{
 #hero h1{
   margin: 0;
   font-size: 60px;
-  letter-spacing: -1.4px;
+  letter-spacing: -0.5px;
 }
 
 #hero p{
