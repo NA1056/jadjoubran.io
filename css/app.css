@@ -369,5 +369,16 @@ video {
     justify-content: center;
 }
 
+@media (max-width: 450px){
+  .menu-blog{
+    display: none;
+  }
+}
+@media (max-width: 380px){
+  .menu-contact{
+    display: none;
+  }
+}
+
 ::-moz-selection { background: rgb(34, 44, 51);color: white; }
 ::selection { background: rgb(34, 44, 51);color: white; }
