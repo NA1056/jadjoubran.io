@@ -15,6 +15,7 @@ h2 {
 h3 {
   font-size: 21px;
   letter-spacing: -0.5px;
+  line-height: 30px;
 }
 p {
   font-size: 17px;
@@ -382,3 +383,9 @@ video {
 
 ::-moz-selection { background: rgb(34, 44, 51);color: white; }
 ::selection { background: rgb(34, 44, 51);color: white; }
+
+#talks .workshop-logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
