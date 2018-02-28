@@ -389,3 +389,14 @@ video {
     align-items: center;
     height: 100%;
 }
+
+#gde{
+  background-image: url('/assets/gde-2018.png');
+  background-size: cover;
+  width: 100px;
+  height: 118px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+}
